@@ -2,7 +2,7 @@
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10%;
+  padding-top: 7%;
   padding-bottom: 5%;
   font-family: "Roboto";
 }
@@ -79,8 +79,16 @@ input:focus {
   margin-left: -30px;
 }
 
-.checked {
+.checked::before {
   color: #2ecc71;
+  content: "\f00c";
+  margin: 8px;
+  margin-left: -30px;
+
+}
+
+.checked {
+  color:#6ac28e
 }
 
 .question {
@@ -88,21 +96,35 @@ input:focus {
 }
 
 .mycontainer {
+  font-family: "Roboto";
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 12%;
+  margin-top: none;
   width: 100%;
   overflow:auto;
-  color: rgb(173, 173, 173);
+  color: rgb(200, 200, 200);
 
 }
+
+.mycontainer p{
+  margin: 10px;
+}
+
 .mycontainer div {
   background-color: #292929;
   margin: 10px;
-  width: 20%;
-  height: 10%;
+  width: 25%;
+  height: 15%;
   float:left;
   text-align: center;
   border-radius: 10px;
+}
+
+.info-title {
+  text-align: center;
+  padding-top: 13%;
+  padding-bottom: none;
+  font-family: 'Roboto';
+  color: rgb(200, 200, 200);
 }
