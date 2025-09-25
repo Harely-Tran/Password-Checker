@@ -16,8 +16,8 @@
     <div id="container1">
         <div id ='input'>
             <h1><span id = "t1">Check </span><span id = "t2">Password Strength</span></h1>
-            <form id="password-form">
-            <input class="password-input" name="password" required placeholder="Enter Your Password" autocomplete="off">          
+            <form id="password-form" onsubmit="event.preventDefault();">
+            <input type ="password" class="password-input" name="password" placeholder="Enter Your Password" autocomplete="off">          
             </form>
             <ul class="checklist">
                 <h3 class="checklist-title">A good password should be</h3>
@@ -27,27 +27,27 @@
                 <li class="list-item">At least 1 lowercase letter</li>
                 <li class="list-item">At least 1 special character</li>
             </ul>
-            <h3 class="question">What makes a good password?</h3>
         <div id="result"></div>
         </div>
     </div>
+    <h2 class="info-title">What makes a good password?</h3>
     <div class="mycontainer">
   <div>
-    <h2>London</h2>
-    <p>London is the capital city of England.</p>
-    <p>London has over 9 million inhabitants.</p>
+    <h2>Do not use personal data</h2>
+    <p>Hackers can use your information to guess your password.</p>
+    <p>Avoid using names, birthdays or anything easy to guess.</p>
   </div>
   
   <div>
-    <h2>Oslo</h2>
-    <p>Oslo is the capital city of Norway.</p>
-    <p>Oslo has over 700,000 inhabitants.</p>
+    <h2>Do not use common words</h2>
+    <p>Common passwords such as "password" or "12345" can be easily cracked.</p>
+    <p>Ensure your password doesn't resemble common ones.</p>
   </div>
   
   <div>
-    <h2>Rome</h2>
-    <p>Rome is the capital city of Italy.</p>
-    <p>Rome has over 4 million inhabitants.</p>
+    <h2>Change your password regularly</h2>
+    <p>Data leaks can make your account vulnerable to breaches.</p>
+    <p>Make sure to change your password every few months.</p>
   </div>
 </body>
 </html>
