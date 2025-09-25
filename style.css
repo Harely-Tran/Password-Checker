@@ -82,7 +82,7 @@ input:focus {
 .checked::before {
   color: #2ecc71;
   content: "\f00c";
-  margin: 8px;
+  margin: 6px;
   margin-left: -30px;
 
 }
