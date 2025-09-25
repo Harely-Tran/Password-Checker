@@ -51,8 +51,3 @@ passwordInp.addEventListener("keyup", () => {
         }
     });
 });
-document.getElementById("submit").onclick = function() {
-    var password = document.getElementById("password").value;
-    var strength = checkPasswordStrength(password);
-    alert("Password Strength: " + strength + " out of 5");
-}
